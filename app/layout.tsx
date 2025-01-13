@@ -23,8 +23,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const shouldInjectToolbar = true;
-  //const shouldInjectToolbar = process.env.NODE_ENV === 'development';
+  const shouldInjectToolbar = process.env.NODE_ENV === "development";
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
